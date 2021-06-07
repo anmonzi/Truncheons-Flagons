@@ -1,7 +1,7 @@
 # Truncheons-Flagons
 ## A Medieval Drinking Game Gone Digital
 
-This app has been deployed with DigitalOcean, you can visit with the provided link.
+This app has been deployed with DigitalOcean, you can visit with the provided link
 https://truncheons-flagons-ifldp.ondigitalocean.app/
 
 ### Contributors
