@@ -13,7 +13,7 @@ const mainContainer = document.querySelector("#container")
 
 // API fetch functions
 export const fetchTeams = () => {
-    return fetch("https://truncheons-flagons-api-tghc2.ondigitalocean.app/teams")
+    return fetch("https://truncheons-flagons-api-6aihu.ondigitalocean.app/teams")
         .then(response => response.json())
         .then(data => {
             applicationState.teams = data
@@ -22,7 +22,7 @@ export const fetchTeams = () => {
 
 
 export const fetchPlayers = () => {
-    return fetch("https://truncheons-flagons-api-tghc2.ondigitalocean.app/players")
+    return fetch("https://truncheons-flagons-api-6aihu.ondigitalocean.app/players")
         .then(response => response.json())
         .then(data => {
             applicationState.players = data
@@ -31,7 +31,7 @@ export const fetchPlayers = () => {
 
 
 export const fetchScores = () => {
-    return fetch("https://truncheons-flagons-api-tghc2.ondigitalocean.app/scores")
+    return fetch("https://truncheons-flagons-api-6aihu.ondigitalocean.app/scores")
         .then(response => response.json())
         .then(data => {
             applicationState.scores = data
@@ -101,7 +101,7 @@ export const sendCurrentScores = (currentScore1) => {
     }
 
 
-    return fetch("https://truncheons-flagons-api-tghc2.ondigitalocean.app/scores", fetchOptions)
+    return fetch("https://truncheons-flagons-api-6aihu.ondigitalocean.app/scores", fetchOptions)
         .then(response => response.json())
         .then(() => {
             applicationState.team2CurrentScore.timestamp = Date.now()
@@ -119,7 +119,7 @@ export const sendCurrentScores = (currentScore1) => {
     }
 
 
-    return fetch("https://truncheons-flagons-api-tghc2.ondigitalocean.app/scores", fetchOptions)
+    return fetch("https://truncheons-flagons-api-6aihu.ondigitalocean.app/scores", fetchOptions)
         .then(response => response.json())
         .then(() => {
             applicationState.team3CurrentScore.timestamp = Date.now()
@@ -137,7 +137,7 @@ const sendCurrentScore3 = (currentScore3) => {
     }
 
 
-    return fetch("https://truncheons-flagons-api-tghc2.ondigitalocean.app/scores", fetchOptions)
+    return fetch("https://truncheons-flagons-api-6aihu.ondigitalocean.app/scores", fetchOptions)
         .then(response => response.json())
         .then(() => {
             applicationState.team1CurrentScore = {}
